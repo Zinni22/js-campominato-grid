@@ -13,17 +13,18 @@ console.log('Ho selezionato l\'elemento', gridContainer);
 const generateButton = document.getElementById('generate-button');
 console.log('Ho selezionato l\'elemento', generateButton);
 
-// cliccandocompare la griglia
-const main = document.getElementById('main');
+// cliccando compare la griglia
 generateButton.addEventListener('click',
     function() {
-        main.classList.add('flex');
+        console.log('cliccando sul bottone è comprsa la tabella')
+
+        gridContainer.classList.add('flex');
+        gridContainer.classList.remove('none');
     }
 )
 
 
 for(let i = 1 ; i <= 100 ; i++){
-    console.log('I numeri all\'interno delle celle sono', i);
 
     // creo le mie celle
     const cell = document.createElement('div');
