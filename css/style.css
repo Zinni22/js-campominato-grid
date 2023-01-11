@@ -22,7 +22,7 @@ main{
 #grid-container{
     width: 80vh;
     height: 80vh;
-    border: 2px solid black;
+    border: 1px solid black;
     flex-wrap: wrap;
 }
 #grid-container .cell{
@@ -30,7 +30,11 @@ main{
     height: calc(100%/10);
     border: 2px solid black;
     cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#grid-container .cell .clicked{
+#grid-container .clicked{
     background-color: aqua;
 }
