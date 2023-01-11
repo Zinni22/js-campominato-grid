@@ -11,13 +11,29 @@ body{
     display: flex;
 }
 
+/* HEADER */
+header{
+    height:50px;
+    padding: 0px 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+header #generate-button{
+    border: 2px solid #7fffd4;
+    padding: 0.6rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
 /* MAIN */
 main{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 50px);
     background-color: #7fffd4;
     justify-content: center;
     align-items: center;
+    display:none;
 }
 #grid-container{
     width: 80vh;
